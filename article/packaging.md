@@ -1,0 +1,63 @@
+# Spring Packaging
+ - core
+   - apllication
+     - exception
+     - service
+   - domain
+     - fundamentals
+     - model
+   - infrastructure
+     - search
+     - aws
+     - datadource
+     - image
+   - presentation
+     - exception
+     - ogp
+     - seo
+ - app-core
+   - domain
+     - fundamentals
+     - model
+     - validation
+     - service
+ - app-batch
+   - 上に同じ
+ - app-ui
+   - presentation
+     - controller
+       - advice
+         - PagenationAdvice.java
+         - ExceptionAdvice.java
+         - BinderAdvice.java
+         - LocaleAdvice.java
+     - view
+      - error
+      - api
+        - request
+        - response
+      - #{業務コンテキスト1}
+      - #{業務コンテキスト2}
+      - #{業務コンテキスト3}
+ - database
+   - migration
+
+# application層
+- 例外処理層
+- サービス層
+
+# domain層
+- 業務の関心事
+
+# infrastructure層
+- Database層
+- 外部サービス連携層
+
+# presentation層
+- プレゼンテーションの関心事
+ - Controller層
+ - パンくず
+ - SEO
+   - ロボット
+   - TDK
+ - ページャー
