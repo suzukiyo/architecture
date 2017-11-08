@@ -4,6 +4,15 @@
 ## rebase conflict
 `git rebase --continue `
 
+## merge -> rebase
+```
+1. merge以降にコミットしたものを別ブランチに退避
+2. git reset --hard {ハッシュ番号} でmergeを取り消し
+3. git pull --rebase でmergeでなくrebaseにする
+4. 退避したものをcherrypickでもってくる
+5. git rebase -i HEAD~n
+```
+
 ## git stash
 
 Confirm: 確認する
